@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('/harry.mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+input{
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid rgb(54, 3, 93);
+  font-size: 22px;
+}
+/*agora serve para o desktop*/
+@media (width >= 768px){
+  body{
+    background-image: url('/harry.pc.jpg');
+  }
+  input{
+    width: 300px;
+    font-size: 18px;
+  }
+}
