@@ -1,22 +1,23 @@
-import { useEffect, useState } from 'react';
-import s from './App.module.css';
-import {api} from './api/api';
-import {Card} from './components/card';
+import { useEffect, useState } from 'react'
+import s from './App.module.css'
+import {api} from './api/api.js'
+import { Card } from './assets/components/card.jsx'
 
 function App() {
   const [data, setData] = useState([])
 
 useEffect(() => {
-  api.get('character/'). then((response)=> {
-    setData(response.data.results)
+  api.get(`characters/students`). then((response)=> {
+    setData(response.data)
+    console.log(response.data)
   }).catch((error) => {
     console.error("NÃO FOI POSSÍVEL ACESSAR API", error)
   })
-})
+  }, [])
 
 return(
   <>
-    <h1 className={s.title}>Harry Potter Characters</h1>
+    <h1 className={s.title}>Harry Potter</h1>
     <main>
       <div style={{display:"flex", flexWrap:"wrap", gap:"20px", alignItems:"center", justifyContent:"center"}}>
      </div>
@@ -24,7 +25,7 @@ return(
       {data.map((item, index) => {
         return(
           <div key={index}>
-              <Card image={item.image} name={item.name} species={item.species}/>
+              <Card image={item.image} name={item.name} house={item.house}/>
           </div>
         )
       })}
@@ -34,6 +35,6 @@ return(
   </>
 )
 
-
+  
 }
 export default App
