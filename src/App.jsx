@@ -11,13 +11,13 @@ useEffect(() => {
     setData(response.data)
     console.log(response.data)
   }).catch((error) => {
-    console.error("NÃO FOI POSSÍVEL ACESSAR API", error)
+    console.error("NÃO FOI POSSÍVEL ACESSAR A API", error)
   })
   }, [])
 
 return(
   <>
-    <h1 className={s.title}>Harry Potter</h1>
+    <h1 className={s.title}>Harry Potter Characters</h1>
     <main>
       <div style={{display:"flex", flexWrap:"wrap", gap:"20px", alignItems:"center", justifyContent:"center"}}>
      </div>

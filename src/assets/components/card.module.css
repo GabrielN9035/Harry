@@ -1,5 +1,5 @@
 .cardBackground{
-    background-color: rgba(26, 54, 73, 0.466);
+    background-color: rgba(48, 150, 133, 0.466);
     color: #213555;
     padding: 10px;
     border-radius: 10px;
@@ -28,14 +28,14 @@
 }
 
 .cardBackground:hover{
-    box-shadow: rgba(116, 154, 185, 0.4) -5px 5px, rgba(118, 193, 255, 0.4) -10px 10px, rgba(118, 193, 255, 0.4) -15px 15px, rgba(118, 193, 255, 0.4) -20px 20px, rgba(118, 193, 255, 0.4) -25px 25px;
+    box-shadow: rgba(48, 150, 133, 0.466) -5px 5px, rgba(48, 150, 133, 0.466) -10px 10px, rgba(48, 150, 133, 0.466) -15px 15px, rgba(48, 150, 133, 0.466) -20px 20px, rgba(48, 150, 133, 0.466) -25px 25px;
 }
 
 .cardTitle{
     font-size: 26px;
     letter-spacing: 2px;
     font-weight: 900;
-    text-shadow: 0px 3px 20px rgb(204, 235, 255);
+    text-shadow: 0px 3px 20px rgb(29, 141, 141);
     width: 100%;
     text-align: center;
 }
